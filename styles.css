@@ -1,0 +1,153 @@
+body {
+    transition: transform 0.3s ease;
+}
+.nav-link:hover {
+    color: rgb(238, 130, 202);
+    border-radius: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(17, 9, 105);
+}
+
+.nav-link.active {  
+    color: rgb(17, 9, 105) !important;  
+}
+
+.navbar-light .nav-link {
+    color: rgb(17, 9, 105) !important;  
+}
+
+.navbar-light .nav-link:hover {
+    color: rgb(240, 162, 160) !important;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(146, 168, 209, 0.50);
+    transition: opacity 0.3s ease;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.277);
+    backdrop-filter: blur(10px) saturate(120%);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.668);
+}
+.navbar-light .navbar-brand {
+    color: rgb(17, 9, 105); 
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; 
+}
+.navbar-light .navbar-brand:hover {
+    color: rgb(240, 162, 160); 
+}
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    z-index: 10;
+    top: 85%;                 
+    left: 120px;               
+    transform: translateY(-50%);
+    font-size: 58px;
+    font-weight: 200;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    font-family: 'Dela Gothic One';
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
+}
+
+.card {
+    border: 10px solid rgba(247,202,201, 0.7);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 0 15px rgba(247,202,201, 0.7); 
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(146, 168, 209, 1); 
+    box-shadow: 0 0 30px rgb(146, 168, 209); 
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+#about .card {
+    background-color: rgb(247,202,201);
+}
+#about .card:hover {
+    transform: none !important;  
+}
+#members .card {
+    background-color: rgb(247,202,201);
+}
+#members .header-card:hover {
+    transform: none !important;
+}
+#sub-units .card {
+    background-color: rgb(247,202,201);
+}
+#sub-units .card:hover {
+    transform: none !important;        
+}
+#fun-facts .card {
+    background-color: rgb(247,202,201);
+}
+#fun-facts .card:hover {
+    transform: none !important;        
+}
+
+h3, .h3 {
+    font-family: 'Dela Gothic One', sans-serif !important;
+    color: rgb(54, 92, 163) !important;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px; 
+    }
+    .hero-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-text {
+        left: 20px;
+        top: 85%;
+        font-size: 28px;
+        line-height: 1.2;
+        transform: translateY(-50%);
+    }
+}
