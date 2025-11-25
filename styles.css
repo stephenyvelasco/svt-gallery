@@ -1,6 +1,16 @@
 body {
     transition: transform 0.3s ease;
 }
+.color1{
+    background-color: rgb(247,202,201);
+    padding: 30px 0;
+    margin: 0;
+}
+.color2 {
+    background-color: 	rgb(203, 208, 235);
+    padding: 30px 0;
+    margin: 0;
+}
 .nav-link:hover {
     color: rgb(238, 130, 202);
     border-radius: 20px;
@@ -25,13 +35,12 @@ body {
 }
 
 .navbar-toggler:hover {
-    background-color: rgba(146, 168, 209, 0.50);
+    background-color: rgb(146, 168, 209);
     transition: opacity 0.3s ease;
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.277);
-    backdrop-filter: blur(10px) saturate(120%);
+    background: rgb(146, 168, 209);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.668);
 }
 .navbar-light .navbar-brand {
@@ -45,7 +54,7 @@ body {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 420px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -87,6 +96,7 @@ body {
 }
 
 .card {
+    background-color: rgb(171,177,207) !important;
     border: 10px solid rgba(247,202,201, 0.7);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -102,31 +112,84 @@ body {
 .card img {
     transition: transform 0.3s ease;
 }
+#sub-units .card {
+    background-color: rgb(247,202,201) !important;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 0 15px rgba(247,202,201, 0.7); 
+}
+
+#sub-units .card:hover {
+    border-color: rgb(75, 91, 171); 
+    box-shadow: 0 0 30px rgb(247,202,201); 
+}
+
+#sub-units .card img {
+    transition: transform 0.3s ease;
+}
 #about .card {
-    background-color: rgb(247,202,201);
+    background-color: rgb(247,202,201) !important;
+    border-color: none !important; 
+    box-shadow: none !important; 
 }
 #about .card:hover {
     transform: none !important;  
+    border-color: none !important; 
+    box-shadow: none !important; 
 }
-#members .card {
-    background-color: rgb(247,202,201);
+#members .header-card-1 {
+    background-color: rgb(171,177,207);
+    border-color: none !important; 
+    box-shadow: none !important; 
 }
-#members .header-card:hover {
+#members .header-card-1:hover {
     transform: none !important;
+    border-color: none !important; 
+    box-shadow: none !important; 
+}
+#members .h3 {
+    font-family: 'Dela Gothic One', sans-serif !important;
+    color: rgb(216, 100, 98) !important;
 }
 #sub-units .card {
     background-color: rgb(247,202,201);
+    border-color: none !important; 
+    box-shadow: none !important; 
 }
 #sub-units .card:hover {
-    transform: none !important;        
+    transform: none !important;
+    border-color: none !important; 
+    box-shadow: none !important;         
 }
-#fun-facts .card {
-    background-color: rgb(247,202,201);
+#sub-units h3{
+    font-family: 'Dela Gothic One', sans-serif !important;
+    color: rgb(216, 100, 98) !important;
 }
-#fun-facts .card:hover {
-    transform: none !important;        
+#fun-facts .header-card-1 {
+    background-color: rgb(171,177,207);
+    border-color: none !important; 
+    box-shadow: none !important; 
 }
-
+#fun-facts .header-card-1:hover {
+    transform: none !important;
+    border-color: none !important; 
+    box-shadow: none !important;         
+}
+#fun-facts h3{
+    font-family: 'Dela Gothic One', sans-serif !important;
+    color: rgb(216, 100, 98)!important;
+}
+.card-funfacts{
+    background-color: rgb(255, 197, 196) !important;
+    transform: none !important;
+    border-color: none !important; 
+    box-shadow: none !important; 
+}
+.card-funfacts:hover {
+    transform: none !important;
+    border-color: none !important; 
+    box-shadow: none !important; 
+}
 h3, .h3 {
     font-family: 'Dela Gothic One', sans-serif !important;
     color: rgb(54, 92, 163) !important;
